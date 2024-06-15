@@ -24,6 +24,7 @@ Clone the repository and install the dependencies:
 git clone https://github.com/yourusername/coordinated-group-detection.git
 cd coordinated-group-detection
 pip install -r requirements.txt
+```
 
 
 [^1]: Giglietto, F., Righetti, N., Rossi, L., & Marino, G. (2020). Coordinated Link Sharing Behavior as a Signal to Surface Sources of Problematic Information on Facebook. International Conference on Social Media and Society, 85--91. [doi](https://doi.org/10.1145/3400806.3400817)
