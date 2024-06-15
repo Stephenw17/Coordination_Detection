@@ -9,7 +9,6 @@ The small changes and optimizations include the following:
 2. Refactored to first filter minimimum repetitions prior to examining timestamp differences thus reducing compute loads.
 3. Alterations to include a broader definition of *objects* to be investigates which can take on any form as detailed below. 
 
-
 ## Features
 
 - Detects coordinated groups based on shared content within a time window.
@@ -18,14 +17,14 @@ The small changes and optimizations include the following:
 
 ## Installation
 
-Clone the repository and install the dependencies:
+Clone the repository and install the dependencies: 
 
 ```bash
-git clone https://github.com/yourusername/coordinated-group-detection.git
+git clone https://github.com/stephenw17/coordinated-group-detection.git
 cd coordinated-group-detection
 pip install -r requirements.txt
 ```
-
+**Note: Dependencies include `pandas`, `numpy`, and `tqdm` for progress updates.**
 
 [^1]: Giglietto, F., Righetti, N., Rossi, L., & Marino, G. (2020). Coordinated Link Sharing Behavior as a Signal to Surface Sources of Problematic Information on Facebook. International Conference on Social Media and Society, 85--91. [doi](https://doi.org/10.1145/3400806.3400817)
 [^2]: Giglietto, F., Righetti, N., Rossi, L., & Marino, G. (2020). It takes a village to manipulate the media: coordinated link sharing behavior during 2018 and 2019 Italian elections. Information, Communication and Society, 1--25. [doi](https://doi.org/10.1080/1369118X.2020.1739732)
