@@ -2,7 +2,7 @@
 
 This tool helps identify coordinated groups based on social media data. It can be used to analyze social media datasets for coordinated activities. The main functionality includes detecting coordinated group activities within a specified time window and calculating user and group statistics, assuming that coordination can be defined as two or more accounts which disseminate an object, (e.g., post, hashtag, link, etc.), within a specified time range (*time window*) with a number of repeated occurences (*minimum repetitions*).
 
-This project pulls from the great work conducted by the people at [CooRNet](https://github.com/fabiogiglietto/CooRnet.git)[^1] [^2] [^3], but instead of focusing primarily on coordinated link sharing, this tool empowers digital analysts who wish to examine other forms of coordination, e.g., **co-posting**, **co-sharing**, **hashtag inflation**., etc. This tool is therefore useful in research concerning co-posts or instances of co-posting where the same message or *similar*[^4] content are posted by multiple users. 
+This project pulls from the great work conducted by the people at [CooRNet](https://github.com/fabiogiglietto/CooRnet.git)[^1],[^2],[^3], but instead of focusing primarily on coordinated link sharing, this tool empowers digital analysts who wish to examine other forms of coordination, e.g., **co-posting**, **co-sharing**, **hashtag inflation**., etc. This tool is therefore useful in research concerning co-posts or instances of co-posting where the same message or *similar*[^4] content are posted by multiple users. 
 
 The small changes and optimizations include the following: 
 1. Refactored to Python
