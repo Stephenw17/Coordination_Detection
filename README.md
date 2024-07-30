@@ -26,6 +26,32 @@ pip install -r requirements.txt
 ```
 **Note: Dependencies include `pandas`, `numpy`, and `tqdm` for progress updates.**
 
+## Usage
+Any part of a tweet, such as text, images, links, hashtags, or the entire message, can be considered an object for coordination. The most frequently observed form of coordination (whether organic or otherwise) is retweet coordination, which can be analyzed by setting columns in your data as follows:
+
+```python
+df_pre_coor_check = df.rename(
+    columns={
+        'sourcetweet_id': 'object_id', 
+        'user_username': 'id_user', 
+        'tweet_id': 'content_id', 
+        'created_at': 'timestamp_share'
+    }
+
+```
+In the above example we are using the `sourcetweet_id` column which represents the originally posted tweet's id as an object of interest. This could be done for processed text using the the text itself or even embeddings of the text if you intend to conduct cosine similarity analysis on the text (co-posting), hashtags present in the messages, or any other textual or meta-data related element. 
+
+
+## Directory Structure
+```
+coordinated-group-detection/
+├── src/
+├── examples/ #Coming soon
+├── README.md
+└── requirements.txt
+```
+
+
 [^1]: Giglietto, F., Righetti, N., Rossi, L., & Marino, G. (2020). Coordinated Link Sharing Behavior as a Signal to Surface Sources of Problematic Information on Facebook. International Conference on Social Media and Society, 85--91. [doi](https://doi.org/10.1145/3400806.3400817)
 [^2]: Giglietto, F., Righetti, N., Rossi, L., & Marino, G. (2020). It takes a village to manipulate the media: coordinated link sharing behavior during 2018 and 2019 Italian elections. Information, Communication and Society, 1--25. [doi](https://doi.org/10.1080/1369118X.2020.1739732)
 [^3]: Giglietto, F., Righetti, N., & Marino, G. (2019). Understanding Coordinated and Inauthentic Link Sharing Behavior on Facebook in the Run-up to 2018 General Election and 2019 European Election in Italy. [doi](https://doi.org/10.31235/osf.io/3jteh)
